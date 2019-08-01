@@ -1,0 +1,59 @@
+.container-fluid.borders.rounded
+    .row.justify-content-center
+        .col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8.bg
+            = image_tag "logo.png", :class => "logo"
+            = image_tag "tagline.png", :class => "tagline"
+            .container
+                .row
+                    .col.justify-content-center.d-flex.p-2
+                        .d-inline-flex.border.rounded.bg-light
+                            .fa-stack.fa-2x
+                                %i.fa.fa-square.fa-stack-2x
+                                %i.fa.fa-phone.fa-flip-horizontal.fa-stack-1x.fa-inverse
+                            %span.font_vw#phones +7(905)706-45-45
+                    .col.justify-content-center.d-flex.p-2
+                        .d-inline-flex.border.rounded.bg-light
+                            .fa-stack.fa-2x
+                                %i.fa.fa-square.fa-stack-2x
+                                %i.fa.fa-clock-o.fa-stack-1x.fa-inverse
+                            %span.font_vw.align-bottom#worktime 8:00 - 20:00
+.container-fluid
+    .row.justify-content-center
+        .col-4.col-sm-4.col-md-2.col-lg-2.col-xl-2.bg-dark.border.rounded
+            .row
+                .col.sales
+                    %p.sale.text-center
+                        %a Акции
+                    %ul
+                        %li.text-light 10% скидка до 1 сентября!
+                        %li.text-light Эвакуатор бесплатно!
+            .row
+                %ul.nav.flex-column
+                    %li.nav-item
+                        %a.nav-link.text-light Виды ремонтов
+                    %li.nav-item
+                        %a.nav-link.text-light Запчасти
+                    %li.nav-item
+                        %a.nav-link.text-light Вакансии
+            .row
+                .col
+                    %a.text-light Партнеры
+            .row
+                .col
+                    %a.text-light О нас
+        .col-8.col-sm-8.col-md-6.col-lg-6.col-xl-6
+            .row
+                .container.bg-dark.border.rounded
+                    .col
+                        %p.font-4rem.text-light.text-center Мультибренд
+                .container.bg-dark.border.rounded
+                    .col
+                        %p.font-3rem.text-light.text-center Все виды ремонтов
+                        %p.font-3rem.text-light.text-center Вашего Авто
+                .container.bg-dark.border.rounded
+                    .col
+                        %script{:type => "text/javascript",
+                                :src => "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6dee49d8f293cffadf44cb6a249b23a9f484ab984e702fd409304d4e1844cd17&amp;width=100%25&amp;height=499&amp;lang=ru_RU&amp;scroll=true"}
+                .container.bg-dark.border.rounded
+                    .col
+                        %span.text-light Отзывы

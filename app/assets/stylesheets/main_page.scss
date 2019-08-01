@@ -1,0 +1,117 @@
+// Place all the styles related to the MainPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.font-1rem
+{
+    font-size: 1rem;
+}
+.font-1_4rem
+{
+    font-size: 1.4rem;
+}
+.font-2rem
+{
+    font-size: 2rem;
+}
+.font-2_4rem
+{
+    font-size: 2.3rem;
+}
+.font-3rem
+{
+    font-size: 3rem;
+}
+.font-4rem
+{
+    font-size: 4rem;
+}
+
+.font_vw
+{
+    font-size: 3vw;
+}
+
+p.sale
+{
+    font-size: 2rem;
+    color: red;
+}
+
+p.sale:link
+{
+    color: OrangeRed;
+}
+
+p.sale:focus
+{
+    color: OrangeRed;
+    border-bottom-left-radius: 1px solid;
+}
+
+p.sale:hover
+{
+    color: OrangeRed;
+    border-bottom-left-radius: 1px solid;
+}
+
+p.sale:active
+{
+    color: OrangeRed;
+    border-bottom-left-radius: 1px solid;
+}
+
+.sales
+{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bg
+{
+    background-image: url(asset_path("main_page/bg.jpg"));
+    background-size: cover;
+}
+
+.logo
+{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.tagline-div
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    //margin: 15px;
+}
+
+.tagline
+{
+    width: 100%;    
+    margin-left: auto;
+    margin-right: auto;
+    //padding-right: 30px;
+    //background: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.body
+{
+    background-image: url(asset_path("bg_full.jpg"));
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+// i.sale-icon
+// {
+//     color: red;
+// }
+
+// i.sale-icon:focus:hover:active
+// {
+//     color: darkred;
+// 
