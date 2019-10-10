@@ -1,31 +1,5 @@
 .container-fluid.borders.rounded
     .row.justify-content-center
-        .col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8.bg
-            = image_tag "logo.png", :class => "logo"
-            = image_tag "tagline.png", :class => "tagline"
-    .row.justify-content-center
-        .col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8.bg_grid.margin_bottom_5.rounded-bottom.d-flex
-            .col-5.d-inline
-                %p.phone-number +7(905)706-45-45
-            .col-2
-            .col-5.d-inline
-                %p.work-time 8:00 - 20:00
-            /
-                .container
-                    .row
-                        .col.justify-content-center.d-flex.p-2
-                            .d-inline-flex.border.rounded.bg-light
-                                .fa-stack.fa-2x
-                                    %i.fa.fa-square.fa-stack-2x
-                                    %i.fa.fa-phone.fa-flip-horizontal.fa-stack-1x.fa-inverse
-                                %span.font_vw#phones +7(905)706-45-45
-                        .col.justify-content-center.d-flex.p-2
-                            .d-inline-flex.border.rounded.bg-light
-                                .fa-stack.fa-2x
-                                    %i.fa.fa-square.fa-stack-2x
-                                    %i.fa.fa-clock-o.fa-stack-1x.fa-inverse
-                                %span.font_vw.align-bottom#worktime 8:00 - 20:00
-    .row.justify-content-center
         .col-4.col-sm-4.col-md-2.col-lg-2.col-xl-2.bg_grid.rounded-left.border-right
             .row
                 .col.sales
@@ -55,13 +29,41 @@
                         %li.nav-item
                             %a.nav-link.text-light О нас
         .col-8.col-sm-8.col-md-6.col-lg-6.col-xl-6.bg_grid.rounded-right.border-left
+            /
+                .row
+                    .col
+                        %p.font-4rem.text-light.text-center Мультибренд
+                .row
+                    .col
+                        %p.font-3rem.text-light.text-center Все виды ремонтов
+                        %p.font-3rem.text-light.text-center Вашего Авто
             .row
-                .col
-                    %p.font-4rem.text-light.text-center Мультибренд
-            .row
-                .col
-                    %p.font-3rem.text-light.text-center Все виды ремонтов
-                    %p.font-3rem.text-light.text-center Вашего Авто
+                .carousel.slide#CarouselMainPage{:"data-ride" => "carousel"}
+                    .carousel-inner
+                        .carousel-item.carousel-item-size
+                            %img.d-block.w-100.img-fluid{:src => image_url("multbrand"), :alt => "Мультибренд"}
+                            .carousel-caption.d-none.d-md-block
+                                %p.carousel-text Мультибренд
+                        .carousel-item.carousel-item-size
+                            %img.d-block.w-100.img-fluid{:src => image_url("kuzremont"), :alt => "Кузовной ремонт"}
+                            .carousel-caption.d-none.d-md-block
+                                %p.carousel-text Кузовной ремонт
+                        .carousel-item.carousel-item-size
+                            %img.d-block.w-100.img-fluid{:src => image_url("raptor"), :alt => "Покраска раптором"}
+                            .carousel-caption.d-none.d-md-block
+                                %p.carousel-text Покраска раптором
+                        .carousel-item.carousel-item-size.active
+                            %img.d-block.w-100.img-fluid{:src => image_url("VseVidyRemontov"), :alt => "Все виды ремонтов"}
+                            .carousel-caption.d-none.d-md-block
+                                %p.carousel-text Все виды ремонтов
+
+                    %a.carousel-control-prev{"data-slide" => "prev", :href => "#CarouselMainPage", :role => "button"}
+                        %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+                        %span.sr-only Previous
+                    %a.carousel-control-next{"data-slide" => "next", :href => "#CarouselMainPage", :role => "button"}
+                        %span.carousel-control-next-icon{"aria-hidden" => "true"}
+                        %span.sr-only Next
+
             .row
                 .col.border-top.border-bottom.p-0
                     %script{:type => "text/javascript",
@@ -69,13 +71,3 @@
             .row
                 .col
                     %span.text-light Отзывы
-    .row.justify-content-center
-        .col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8.bg-dark
-            %p.text-white
-                Контакты:
-            %p.text-white
-                +7(905)706-45-45
-            %p.text-white
-                +7(926)876-71-49
-            %p.text-white
-                Москва, Улица Щербинская, дом 48А стр. 11

@@ -1,0 +1,24 @@
+.container-fluid
+  .row.justify-content-center
+    .col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8.bg_grid.borders.rounded
+      %p.text-center.font-4rem.text-light Регистрация
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        = render "devise/shared/error_messages", resource: resource
+        .form-group
+          = f.label :email
+          %br/
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Введите электронную почту"
+        .form-group
+          = f.label :password
+          - if @minimum_password_length
+            %em
+              (не менее #{@minimum_password_length} символов)
+          %br/
+          = f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Введите пароль"
+        .form-group
+          = f.label :password_confirmation
+          %br/
+          = f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Подветрдите пароль"
+        .actions
+          = f.submit "Подтвердить", class: "btn btn-primary"
+      = render "devise/shared/links"

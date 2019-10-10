@@ -3,4 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
   $('[data-toggle="tooltip"]').tooltip()
+  $('.carousel').carousel(
+      {
+          interval: 5000;
+      }
+  )
   return

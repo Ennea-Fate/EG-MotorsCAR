@@ -168,6 +168,50 @@ p.sale:active
 {
     border-top-left-radius: 0.25rem;
 }
+
+#CarouselMainPage
+{
+    min-width: 100%;
+
+}
+
+.carousel-item-size
+{
+    min-width: 100%;
+
+}
+.carousel-item-size Img
+{
+    width: 100%;
+    height: auto;
+    max-height: auto !important;
+    max-width: 1000px !important;
+}
+
+.carousel-caption
+{
+    bottom: 0 !important;
+    padding-bottom: 0 !important;
+    width: 100%;
+    height: auto;
+    right: 0 !important;
+    left: 0 !important;
+}
+
+.carousel-text
+{
+    bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: white;
+    text-transform: uppercase;
+    //text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+    font-size: 5rem;
+    //background-color: rgba(0, 0, 0, 0.8)
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 60%, rgba(0,0,0,0.8) 85%, rgba(0,0,0,0.4) 100%);
+}
+
 // i.sale-icon
 // {
 //     color: red;
