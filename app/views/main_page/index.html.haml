@@ -7,7 +7,7 @@
                         %a Акции
                     %ul
                         %li.text-light.sale-li{:"data-toggle" => "tooltip", :"data-placement" => "top", :title => "Распространяеться только на работы. Не распростроняется на запчасти и прочие товары."}
-                            10% скидка до 1 октября! 
+                            скидки до 20% до 30 ноября! 
                             %sup *
                         %li.text-light.sale-li{:"data-toggle" => "tooltip", :"data-placement" => "top", :title => "Только при условии обслуживания в нашем сервис-центре и стоимости эвакуации до 3000 рублей"}
                             Эвакуатор бесплатно!
@@ -23,7 +23,8 @@
                         %li.nav-item
                             %a.nav-link.text-light Запчасти
                         %li.nav-item
-                            %a.nav-link.text-light Вакансии
+                            = link_to(job_opening_vacancy_path, class: "nav-link text-light") do
+                                Ванаксии
                         %li.nav-item
                             %a.nav-link.text-light Партнеры
                         %li.nav-item
