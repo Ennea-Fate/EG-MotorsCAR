@@ -19,12 +19,13 @@
                 .col
                     %ul.nav.flex-column
                         %li.nav-item
-                            %a.nav-link.text-light Виды ремонтов
+                            = link_to(price_path, class: "nav-link text-light") do
+                                Виды ремонтов и цены
                         %li.nav-item
                             %a.nav-link.text-light Запчасти
                         %li.nav-item
-                            = link_to(job_opening_vacancy_path, class: "nav-link text-light") do
-                                Ванаксии
+                            = link_to(vacancy_path, class: "nav-link text-light") do
+                                Вакансии
                         %li.nav-item
                             %a.nav-link.text-light Партнеры
                         %li.nav-item
