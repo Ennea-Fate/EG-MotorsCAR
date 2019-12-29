@@ -1,4 +1,6 @@
 .container-fluid.borders.rounded
     .row.justify-content-center
         .col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8.bg_grid.rounded-left.border-right
-            = link_to("Скачать прайс лист", "price.xlsx")
+            %embed{:src => "price.pdf", :width => 800, :height => 1000, :style => "border: none"}
+            %br
+            = link_to("Скачать прайс лист в формате Excel", "price.xlsx")
